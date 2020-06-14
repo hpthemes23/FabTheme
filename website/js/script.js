@@ -1,27 +1,31 @@
 /*
 Theme Name:     FabTheme
 Version:        1.0
+Description:    Custom JS for the theme
 */
-/* DEMO 1 JS */
-/* DEMO 1 AOS */
-AOS.init();
-/* END OF DEMO 1 AOS */
-/* DEMO 1 TYPED */
-$(document).ready(function(){
-	var typed = new Typed('#typed', {
-		strings: ['Responsive', 'Agency', 'Landing Page'],
-		typeSpeed: 120,
-		backSpeed: 0,
-		fadeOut: true,
-		smartBackspace: true,
-		loop: true
-	});
-});
-/* END OF DEMO 1 TYPED */
-/* DEMO 1 OWL CAROUSEL */
+/* 
+	All custom ids and classes used for the theme, starts with "fabtheme".
+*/
+/* TABLE OF CONTENTS
+	1. owl carousel
+		1.1 .fabtheme-owl-1
+		1.2 .fabtheme-owl-2
+	2. counter up
+		2.1 .fabtheme-counter-up
+	3. wow
+	4. navigation
+		4.1 #fabtheme-navbar
+	5. scroll top
+		5.1 .fabtheme-scrolltop
+		5.2 .fabtheme-sroll
+		5.3 .fabtheme-thetop
+END OF TABLE OF CONTENTS */
+/* CUSTOM JS */
+/* OWL CAROUSEL */
 $(document).ready(function () {
-	$(".fabtheme-demo-1-owl-1").owlCarousel({
-		singleItem: true,
+	$(".fabtheme-owl-1").owlCarousel({
+		autoWidth: false,
+		items: 1,
 		loop: true,
 		margin: 10,
 		autoplay: true,
@@ -31,13 +35,25 @@ $(document).ready(function () {
 		responsive: {
 			0: {
 				items: 1,
-				nav: true
+				nav: false
+			},
+			576: {
+				items: 1,
+				nav: false
+			},
+			992: {
+				items: 1,
+				nav: false
+			},
+			1200: {
+				items: 1,
+				nav: false
 			}
 		}
 	});
 });
 $(document).ready(function(){
-	$(".fabtheme-demo-1-owl-2").owlCarousel({
+	$(".fabtheme-owl-2").owlCarousel({
 		items: 3,
 		loop: true,
 		margin: 10,
@@ -71,10 +87,10 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 });
-/* END OF DEMO 1 OWL CAROUSEL */
-/* DEMO 1 COUNTER UP */
+/* END OF OWL CAROUSEL */
+/* COUNTER UP */
 $(document).ready(function () {
-	$('.count').counterUp({
+	$('.fabtheme-counter-up').counterUp({
 		delay: 10,
 		time: 5000,
 		offset: 100,
@@ -84,33 +100,60 @@ $(document).ready(function () {
 		}
 	});
 });
-/* END OF DEMO 1 COUNTER UP */
-/* DEMO 1 SCROLL TOP */
+/* END OF COUNTER UP */
+/* WOW */
+$(document).ready(function(){
+	new WOW().init();
+});
+/* END OF WOW */
+/* NAVIGATION BAR */
+$(document).ready(function(){
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() > 10 ) {
+	        $('#fabtheme-navbar').addClass('solid');
+	    } else {
+	        $('#fabtheme-navbar').removeClass('solid');
+	    }
+	    if ($(this).scrollTop() <= 0 ) {
+	    	$('#fabtheme-navbar').hide();
+	    }
+	    else{
+	    	$('#fabtheme-navbar').show();
+	    }
+	});
+});
+/* SMOOTH SCROLL */
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+			  event.preventDefault();
+			  var hash = this.hash;
+			  $('html, body').animate({
+			    scrollTop: $(hash).offset().top
+			  }, 800, function(){
+			    window.location.hash = hash;
+			  });
+			}
+		});
+	});
+/* END OF SMOOTH SCROLL */
+/* END OF NAVIGATION BAR */
+/* SCROLL TOP */
 $(window).scroll(function() {
     if ($(this).scrollTop() > 50 ) {
-        $('.fabtheme-demo-1-scrolltop:hidden').stop(true, true).fadeIn();
-        $('#fabtheme-demo-1-navbar').addClass('solid');
+        $('.fabtheme-scrolltop:hidden').stop(true, true).fadeIn();
     } else {
-        $('.fabtheme-demo-1-scrolltop').stop(true, true).fadeOut();
-        $('#fabtheme-demo-1-navbar').removeClass('solid');
+        $('.fabtheme-scrolltop').stop(true, true).fadeOut();
     }
 });
 $(function(){
-	$(".fabtheme-demo-1-scroll").click(function(){
+	$(".fabtheme-scroll").click(function(){
 		$("html,body").animate({
-			scrollTop:$(".fabtheme-demo-1-thetop").offset().top - 0
+			scrollTop:$(".fabtheme-thetop").offset().top - 0
 		},3000, 'easeInOutExpo');
 		return false;
 	})
 });
-/* END OF DEMO 1 SCROLL TOP */
-/* DEMO 1 SMOOTH SCROLL */
-$('.navbar-nav a, .mouse-down a').on('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 0
-    }, 2000, 'easeInOutExpo');
-    event.preventDefault();
-});
-/* END OF DEMO 1 SMOOTH SCROLL */
-/* END OF DEMO 1 JS */
+/* END OF SCROLL TOP */
+/* END OF CUSTOM JS */

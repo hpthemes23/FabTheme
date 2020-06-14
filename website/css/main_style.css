@@ -1,306 +1,344 @@
 /*
 Theme Name:     FabTheme
 Version:        1.0
+Description:    Custom CSS
 */
 /* 
-	All custom ids and classes used in this theme starts with "fabtheme-demo-1".
+	All custom ids and classes used for the theme, starts with "fabtheme".
 */
 /* TABLE OF CONTENTS */
 /*
 	1. body
-		1.1 #fabtheme-demo-1-body
-	2. navigation
-		2.1 #fabtheme-demo-1-navbar
-	3. selecting all elements
-		3.1 *
-	4. card-columns
-		4.1 .fabtheme-demo-1-card-columns
-	5. link show
-		5.1 .fabtheme-demo-1-link-show
-	6. headings
-		6.1 .fabtheme-demo-1-headings
-	7. parallax
-		7.1 .fabtheme-demo-1-parallax-1
-		7.2 .fabtheme-demo-1-parallax-2
-		7.3 .fabtheme-demo-1-parallax-3
-		7.4 .fabtheme-demo-1-parallax-4
-	8. button
-		8.1 .fabtheme-demo-1-button
-	9. about
-		9.1 .fabtheme-demo-1-about
-	10. colors
-		10.1 .fabtheme-demo-1-c1
-		10.2 .fabtheme-demo-1-c2
-		10.3 .fabtheme-demo-1-c3
-		10.4 .fabtheme-demo-1-c4
-		10.5 .fabtheme-demo-1-c5
-		10.6 .fabtheme-demo-1-c6
-	11. reviews
-		11.1 .fabtheme-demo-1-reviews
-		11.2 .fabtheme-demo-1-reviews-img
-	12. links
-		12.1 .fabtheme-demo-1-link-1
-		12.2 .fabtheme-demo-1-link-2
-		12.3 .fabtheme-demo-1-link-3
-		12.4 .fabtheme-demo-1-link-4
-	13. tab
-		13.1 .fabtheme-demo-1-tab
-	14. images zoom in on hover
-		14.1 .fabtheme-demo-1-zoom
-	15. contact form
-		15.1 #fabtheme-demo-1-form
-	16. scroll top
-		16.1 .fabtheme-demo-1-scrolltop
-		16.2 .fabtheme-demo-1-scroll
-		16.3 .fabtheme-demo-1-scroll .fas
-	17. documentation scroll
-		17.1 .fabtheme-demo-1-scroll-doc
-	18. documentation code
-		18.1 .fabtheme-demo-1-pre
-	19. footer
-		19.1 #fabtheme-demo-1-footer
-		19.2 .fabtheme-demo-1-footer-link
+		1.1 #fabtheme-body
+	2. headlines
+		h1, h2, h3
+	3. headings
+		3.1 .fabtheme-headings
+	4. about
+		4.1 .fabtheme-about
+	5. services
+		5.1 .fabtheme-services-1
+		5.2 .fabtheme-services-2
+	6. count
+		6.1 .fabtheme-count
+	7. reviews
+		7.1 .fabtheme-reviews-1
+		7.2 .fabtheme-reviews-2
+		7.3 .fabtheme-reviews-3
+		7.4 .fabtheme-reviews-img
+	8. team
+		8.1 .fabtheme-team-1
+		8.2 .fabtheme-team-2
+	9. blog
+		9.1 .fabtheme-blog-1
+		9.2 .fabtheme-blog-2
+	10. video
+		10.1 .fabtheme-video
+	11. contact
+		11.1 .fabtheme-contact
+	12. newsletter
+		12.1 .fabtheme-newsletter
+	13. parallax
+		13.1 .fabtheme-parallax-1
+		13.2 .fabtheme-parallax-2
+		13.3 .fabtheme-parallax-3
+		13.4 .fabtheme-parallax-4
+	14. navigation
+		14.1 #fabtheme-navbar
+	15. link show
+		15.1 .fabtheme-link-show
+	16. links
+		16.1 .fabtheme-link-1
+		16.2 .fabtheme-link-2
+	17. tab
+		17.1 .fabtheme-tab
+	18. button
+		18.1 .fabtheme-button
+	19. card-columns
+		19.1 .fabtheme-card-columns
+	20. images zoom in
+		20.1 .fabtheme-zoom
+	21. scroll top
+		21.1 .fabtheme-scrolltop
+		21.2 .fabtheme-scroll
+		21.3 .fabtheme-scroll .fas
+	22. input
+		22.1 .fabtheme-field input
+	23. textarea
+		23.1 .fabtheme-field textarea
+	24. height of all elements
+		24.1 *
+	25. footer
+		25.1 #fabtheme-footer
 */
 /* END OF TABLE OF CONTENTS */
-/* DEMO 1 PAGE CSS */
-/* DEMO 1 BODY */
-#fabtheme-demo-1-body{
-	background-color: #1c1f1d;
-	color: white;
+/* CUSTOM CSS */
+/* BODY */
+#fabtheme-body{
+	background-color: #343330;
+	color: #F3F3F3;
 	font-size: 18px;
 	height: 100vh;
 	font-family: 'Varela Round', sans-serif;
 }
-/* END OF DEMO 1 BODY */
-/* DEMO 1 NAVIGATION */
-#fabtheme-demo-1-navbar{
-	background-color: #a8837a;
-	color: white;
+/* END OF BODY */
+/* HEADLINES */
+h1,h2,h3{
+	font-family: 'Black Han Sans', sans-serif;
 }
-#fabtheme-demo-1-navbar.solid{
-	background-color: #658c84;
-	color: white;
+/* END OF HEADLINES */
+/* HEADINGS */
+.fabtheme-headings{
+	background-color: #343330;
+	color: #F3F3F3;
+    border-right: 40px solid #4D5359;
+	word-wrap: break-word;
+}
+/* END OF HEADINGS */
+/* ABOUT */
+.fabtheme-about{
+	background-color: #684551;
+	color: #F3F3F3;
+	border-left: 40px solid #1B1524;
+}
+/* END OF ABOUT */
+/* SERVICES */
+.fabtheme-services-1{
+	background-color: #2E4057;
+	color: #F3F3F3;
+	border-right: 40px solid #0D1821;
+}
+.fabtheme-services-2{
+	background-color: #FCE694;
+	color: #000000;
+	border: 0;
+	border-radius: 0;
+}
+/* END OF SERVICES */
+/* COUNT */
+.fabtheme-count{
+	background-color: #343330;
+	color: #F3F3F3;
+    border-left: 40px solid #4D5359;
+	word-wrap: break-word;
+}
+/* END OF COUNT */
+/* REVIEWS */
+.fabtheme-reviews-1{
+	background-color: #343330;
+	color: #F3F3F3;
+    border-left: 40px solid #4D5359;
+}
+.fabtheme-reviews-2{
+	color: #F3F3F3;
+	padding: 0;
+	margin: 0;
+}
+.fabtheme-reviews-3{
+	color: #CFDBD5;
+}
+#reviews .fabtheme-reviews-img{
+    width: 120px;
+    height: 80px;
+}
+/* END OF REVIEWS */
+/* TEAM */
+.fabtheme-team-1{
+	background-color: #1F5673;
+	color: #F3F3F3;
+	border-right: 40px solid #60463B;
+}
+#team .fabtheme-team-2{
+	background-color: #FFFBFC;
+	color: #000000;
+	border: 0;
+	border-radius: 0;
+}
+/* END OF TEAM */
+/* BLOG */
+.fabtheme-blog-1{
+	background-color: #041F1E;
+	color: #F3F3F3;
+	border-left: 40px solid #702632;
+}
+.fabtheme-blog-2{
+	background-color: #041F1E;
+	color: #F3F3F3;
+	border: 0;
+	border-radius: 0;
+}
+/* END OF BLOG */
+/* VIDEO */
+.fabtheme-video{
+    height: auto;
+}
+/* END OF VIDEO */
+/* CONTACT */
+.fabtheme-contact{
+	background-color: #5E503F;
+	color: #F3F3F3;
+	border-left: 40px solid #432E36;
+}
+/* END OF CONTACT */
+/* NEWSLETTER */
+.fabtheme-newsletter{
+	background-color: #343330;
+	color: #F3F3F3;
+	border-right: 40px solid #4D5359;
+}
+/* END OF NEWSLETTER */
+/* PARALLAX */
+.fabtheme-parallax-1{
+	height: 100%;
+    background-image: url("../images/home.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.fabtheme-parallax-2{
+	height: 100%;
+    background-image: url("../images/count.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.fabtheme-parallax-3{
+	height: 100%;
+    background-image: url("../images/reviews-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.fabtheme-parallax-4{
+	height: 100%;
+    background-image: url("../images/newsletter.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+/* END OF PARALLAX */
+/* NAVIGATION */
+#fabtheme-navbar{
+	background-color: #9C0D38;
+	color: #F3F3F3;
+}
+#fabtheme-navbar.solid{
+	background-color: #9C0D38;
+	color: #F3F3F3;
 	transition-delay: 0.2s;
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 }
-#fabtheme-demo-1-navbar .fabtheme-demo-1-nav-link{
-	color: white;
+#fabtheme-navbar .fabtheme-nav-link{
+	color: #F3F3F3;
 }
-#fabtheme-demo-1-navbar .fabtheme-demo-1-nav-link:hover{
-	color: #e3ede9;
+#fabtheme-navbar .fabtheme-nav-link:hover{
+	color: #DBDBDB;
 }
-/* END OF DEMO 1 NAVIGATION */
-/* DEMO 1 HEIGHT OF ALL ELEMENTS */
-*{
-    min-height: 0.01px;
+/* END OF NAVIGATION */
+/* LINK SHOW */
+.fabtheme-link-show{
+    padding-top: 60px;
+    margin-top: -60px;
 }
-/* END OF DEMO 1 HEIGHT OF ALL ELEMENTS */
-/* DEMO 1 CARD COLUMNS */
+/* END OF LINK SHOW */
+/* LINKS */
+.fabtheme-link-1{
+	color: #343330;
+}
+.fabtheme-link-1:hover{
+	color: #1F5673;
+}
+.fabtheme-link-2{
+	color: #F3F3F3;
+}
+.fabtheme-link-2:hover{
+	color: #E8F7EE;
+}
+.fabtheme-link-3{
+	color: #F3F3F3;
+}
+.fabtheme-link-3:hover{
+	color: #E3EDE9;
+	text-decoration: none;
+}
+/* END OF LINKS */
+/* TAB */
+.fabtheme-tab .nav-link, .fabtheme-tab .show>.nav-link{
+	color: #F3F3F3;
+	border-radius: 0;
+}
+.fabtheme-tab .nav-link:hover, .fabtheme-tab .show>.nav-link{
+	color: #DBDBDB;
+	border-radius: 0;
+}
+.fabtheme-tab .nav-link.active, .fabtheme-tab .show>.nav-link{
+	background-color: #334E58;
+	color: #F3F3F3;
+	border-radius: 0;
+}
+/* END OF TAB */
+/* BUTTON */
+.fabtheme-button{
+	background-color: #B3001B;
+	color: #F3F3F3;
+	border-radius: 0;
+}
+.fabtheme-button:hover{
+	background-color: #1F0318;
+	color: #F3F3F3;
+}
+/* END OF BUTTON */
+/* CARD COLUMNS */
 @media (min-width: 576px){
-    .fabtheme-demo-1-card-columns{
+    .fabtheme-card-columns{
         column-count: 1;
     }
-	.card-count>.fabtheme-demo-1-card-columns{
+	.card-count>.fabtheme-card-columns{
         column-count: 1;
     }
 }
 @media (min-width: 768px){
-    .fabtheme-demo-1-card-columns{
+    .fabtheme-card-columns{
         column-count: 1;
     }
-	.card-count>.fabtheme-demo-1-card-columns{
+	.card-count>.fabtheme-card-columns{
         column-count: 1;
     }
 }
 @media (min-width: 992px){
-    .fabtheme-demo-1-card-columns{
+    .fabtheme-card-columns{
         column-count: 3;
     }
-	.card-count>.fabtheme-demo-1-card-columns{
+	.card-count>.fabtheme-card-columns{
         column-count: 4;
     }
 }
 @media (min-width: 1200px){
-    .fabtheme-demo-1-card-columns{
+    .fabtheme-card-columns{
         column-count: 3;
     }
-	.card-count>.fabtheme-demo-1-card-columns{
+	.card-count>.fabtheme-card-columns{
         column-count: 4;
     }
 }
-/* END OF DEMO 1 CARD COLUMNS */
-/* DEMO 1 LINK SHOW */
-.fabtheme-demo-1-link-show{
-    padding-top: 60px;
-    margin-top: -60px;
-}
-/* END OF DEMO 1 LINK SHOW */
-/* DEMO 1 HEADINGS */
-.fabtheme-demo-1-headings{
-	background-color: transparent;
-	color: white;
-	word-wrap: break-word;
-}
-/* END OF DEMO 1 HEADAINGS */
-/* DEMO 1 PARALLAX */
-.fabtheme-demo-1-parallax-1{
-	height: 100%;
-    background-image: url("../images/workplace-1245776_1920.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.fabtheme-demo-1-parallax-2{
-	height: 100%;
-    background-image: url("../images/women-1209678_1920.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.fabtheme-demo-1-parallax-3{
-	height: 100%;
-    background-image: url("../images/student-849822_1920.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.fabtheme-demo-1-parallax-4{
-	height: 100%;
-    background-image: url("../images/office-336368_1920.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
-/* END OF DEMO 1 PARALLAX */
-/* MAIN PAGE BUTTON */
-.fabtheme-demo-1-button{
-	background-color: #374232;
-	color: white;
-}
-.fabtheme-demo-1-button:hover{
-	background-color: #4c6374;
-	color: white;
-}
-/* END OF MAIN PAGE BUTTON */
-/* DEMO 1 ABOUT */
-.fabtheme-demo-1-about{
-	background-color: #1c1f1d;
-	color: white;
-	border: 0;
-}
-/* END OF DEMO 1 ABOUT */
-/* DEMO 1 COLORS */
-.fabtheme-demo-1-c1{
-	background-color: #b53727;
-}
-.fabtheme-demo-1-c2{
-	background-color: #435231;
-}
-.fabtheme-demo-1-c3{
-	background-color: #4d484b;
-}
-.fabtheme-demo-1-c4{
-	background-color: transparent;
-	border: 0;
-}
-.fabtheme-demo-1-c5{
-	background-color: #615643;
-}
-.fabtheme-demo-1-c6{
-	background-color: #c84f26;
-}
-/* END OF DEMO 1 COLORS */
-/* DEMO 1 REVIEWS */
-.fabtheme-demo-1-reviews{
-	color: #ca8633;
-	font-weight: bold;
-}
-#reviews .fabtheme-demo-1-reviews-img{
-    width: 200px;
-    height: 150px;
-}
-/* END OF DEMO 1 REVIEWS */
-/* DEMO 1 LINKS */
-.fabtheme-demo-1-link-1{
-	color: white;
-}
-.fabtheme-demo-1-link-1:hover{
-	color: #b53727;
-}
-.fabtheme-demo-1-link-2{
-	color: white;
-}
-.fabtheme-demo-1-link-2:hover{
-	color: #689087;
-}
-.fabtheme-demo-1-link-3{
-	color: white;
-}
-.fabtheme-demo-1-link-3:hover{
-	color: #6c9661;
-}
-.fabtheme-demo-1-link-4{
-	color: white;
-}
-.fabtheme-demo-1-link-4:hover{
-	color: #698d84;
-}
-/* END OF DEMO 1 LINKS */
-/* DEMO 1 TAB */
-.fabtheme-demo-1-tab .nav-link, .fabtheme-demo-1-tab .show>.nav-link{
-	color: white;
-}
-.fabtheme-demo-1-tab .nav-link.active, .fabtheme-demo-1-tab .show>.nav-link{
-	background-color: #54413a;
-	color: white;
-}
-.fabtheme-demo-1-tab .nav-link:hover, .fabtheme-demo-1-tab .show>.nav-link{
-	color: #e4bdac;
-}
-/* END OF DEMO 1 TAB */
-/* DEMO 1 HOVER ZOOM IN */
-.fabtheme-demo-1-zoom img {
+/* END OF CARD COLUMNS */
+/* IMAGES ZOOM IN */
+.fabtheme-zoom img {
 	width: 100%;
 	height: auto;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.fabtheme-demo-1-zoom:hover img {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
+.fabtheme-zoom:hover img {
     transform: scale(1.1);
 }
-/* END OF DEMO 1 HOVER ZOOM IN */
-/* DEMO 1 CONTACT FORM */
-#fabtheme-demo-1-form{
-	background-color: #c84f26;
-	padding: 40px;
-}
-/* END OF DEMO 1 CONTACT FORM */
-/* DEMO 1 SCROLL */
-.fabtheme-demo-1-scrolltop{
+/* END OF IMAGES ZOOM IN */
+/* SCROLL TOP */
+.fabtheme-scrolltop{
 	display: none;
 	width: 100%;
 	margin: 0 auto;
@@ -308,7 +346,7 @@ Version:        1.0
 	bottom: 20px;
 	right: 10px;
 }
-.fabtheme-demo-1-scroll{
+.fabtheme-scroll{
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
@@ -317,54 +355,40 @@ Version:        1.0
 	text-align: center;
 	margin: 0 0 0 0;
 	cursor: pointer;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
 	transition: 0.5s;
 }
-.fabtheme-demo-1-scroll:hover{
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
+.fabtheme-scroll:hover{
 	transition: 0.5s;	
 }
-.fabtheme-demo-1-scroll .fas{
+.fabtheme-scroll .fas{
 	font-size: 30px;
-	color: #2d2f30;
+	color: #000000;
 	margin-top: -5px;
 	margin-left: 1px;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
 	transition: 0.5s;
 }
-.fabtheme-demo-1-scroll:hover .fas{
-	padding-top: -10px;
+/* END OF SCROLL TOP */
+/* INPUT */
+.fabtheme-field input{
+	border: 0;
+	border-radius: 0;
 }
-/* END OF DEMO 1 SCROLL */
-/* DEMO 1 DOCUMENTATION SCROLL */
-.fabtheme-demo-1-scroll-doc{
-	position: relative;
-	height: 100vh;
-	overflow-y: scroll;
+/* END OF INPUT */
+/* TEXTAREA */
+.fabtheme-field textarea{
+	border: 0;
+	border-radius: 0;
 }
-/* END OF DEMO 1 DOCUMENTATION SCROLL */
-/* DEMO 1 DOCUMENTATION CODE */
-.fabtheme-demo-1-pre{
-	color: #ca8633;
+/* END OF TEXTAREA */
+/* HEIGHT OF ALL ELEMENTS */
+*{
+    min-height: 0.01px;
 }
-/* END OF DEMO 1 DOCUMENTATION CODE */
-/* DEMO 1 FOOTER */
-#fabtheme-demo-1-footer{
-	background-color: #54413a;
-	color: white;
+/* END OF HEIGHT OF ALL ELEMENTS */
+/* FOOTER */
+#fabtheme-footer{
+	background-color: #121420;
+	color: #F3F3F3;
 }
-.fabtheme-demo-1-footer-link{
-	color: white;
-}
-.fabtheme-demo-1-footer-link:hover{
-	color: #e3ede9;
-	text-decoration: none;
-}
-/* END OF DEMO 1 FOOTER */
-/* END OF DEMO 1 PAGE CSS */
+/* END OF FOOTER */
+/* END OF CUSTOM CSS */
